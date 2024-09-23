@@ -8,7 +8,7 @@ FOR EACH ROW
 
 BEGIN 
 
-   INSERT INTO act_venta(id_Venta, Cantidad)
+   INSERT INTO Venta (id_Venta, Cantidad)
    
    VALUES (NEW.id_Venta, NEW.Cantidad, CURDATE());
    
@@ -28,10 +28,10 @@ on Facturas
 for each row
 
 begin
-	insert into facturas (Id_Factura, Fecha, Cant_producto,
-    Valor_Factura)
-    values (" ", " ", " ", new.Valor_Factura*0.19);
-    end //
+	insert into facturas (Id_Factura, Fecha, Cant_producto, Valor_Factura)
+ 	values (" ", " ", " ", new.Valor_Factura*0.19);
+
+end //
 
 
 

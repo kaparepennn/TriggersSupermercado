@@ -3,8 +3,9 @@ Iniciamos con la creación de la base de datos "supermercado" con sus respectiva
 
 ![image](https://github.com/user-attachments/assets/9cbaa523-2839-4dcf-8406-faa4aef3f0da)
 
-
 Creamos las llaves para su cardinalidad.
+
+![image](https://github.com/user-attachments/assets/a35152b7-a94f-4e25-9db4-b585c441a8ec)
 
 Empezamos con la creación de los triggers:
 

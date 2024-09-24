@@ -1,3 +1,12 @@
+Iniciamos con la creación de la base de datos "supermercado" con sus respectivas tablas, las cuales fueron llamadas
+"Clientes", "Factruras", "Productos" y "Ventas".
+
+Creamos las llaves para su cardinalidad.
+
+Empexamos con la creación de los triggers:
+
+
+
 DELIMITER //
 
 CREATE TRIGGER act_venta

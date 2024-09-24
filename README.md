@@ -1,6 +1,9 @@
 Iniciamos con la creación de la base de datos "supermercado" con sus respectivas tablas, las cuales fueron llamadas
 "Clientes", "Factruras", "Productos" y "Ventas".
 
+![image](https://github.com/user-attachments/assets/9cbaa523-2839-4dcf-8406-faa4aef3f0da)
+
+
 Creamos las llaves para su cardinalidad.
 
 Empezamos con la creación de los triggers:

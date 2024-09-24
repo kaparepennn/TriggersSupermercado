@@ -10,14 +10,34 @@ Empezamos con la creación de los triggers:
 el iva*/
 
 DELIMITER //
+
 Create trigger calcular_valor after update
+
 on Ventas
+
 for each row
 
 begin
 	insert into facturas (Id_Factura, Fecha, Cant_producto,
-    Valor_Factura)
-    values (new.Id_Factura(), now(), new.Cant_producto(), 
-    new.Valor_Factura());
+    	Valor_Factura)
+    	values (new.Id_Factura(), now(), new.Cant_producto(), 
+    	new.Valor_Factura());
 
-    end //
+end //
+
+
+/*Auditoria para determinar que usuario realizó determinada acción, 
+en este caso, para ver que usuario realizó la venta y la fecha en que la
+se realizó*/
+
+DELIMITER //
+
+Create trigger auditoria after update 
+
+on facturas for each row
+
+begin
+	insert into Ventas (id_venta, Cantidad, Usuario, Fecha)
+	values (new.id_venta(), new.Cantidad(), user(), now());
+
+end//
